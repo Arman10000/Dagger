@@ -58,7 +58,7 @@ class Fragment1 : Fragment(R.layout.fragment_1) {
         requireActivity().findViewById<Button>(R.id.button).setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .addToBackStack(null)
-                .replace(R.id.fragmentContainerView, Fragment2.newInstance())
+                .replace(R.id.fragmentContainerView, Fragment2.newInstance(1))
                 .commit()
         }
     }

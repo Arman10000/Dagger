@@ -15,6 +15,10 @@ class Fragment2ViewModel @AssistedInject constructor(
     @Assisted private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
+    init {
+        println(savedStateHandle.get<Int>("key"))
+    }
+
     override fun onCleared() {
         super.onCleared()
         val app = (applicationContext as App)
