@@ -1,4 +1,4 @@
-package com.example.dagger.fragment.di
+package com.example.dagger.fragment.fragment1.di
 
 import javax.inject.Scope
 

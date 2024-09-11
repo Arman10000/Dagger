@@ -8,6 +8,7 @@ class Person1
 
 @Module
 class AppModule {
+
     @Singleton
     @Provides
     fun person1(): Person1 = Person1()
@@ -17,6 +18,7 @@ class AppModule {
 //interface Person
 //class Person3 @Inject constructor() : Person
 //
+//@Module
 //abstract class Module {
 //    @Binds
 //    abstract fun person(person3: Person3): Person
